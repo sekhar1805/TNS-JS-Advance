@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Spend Analysis</title>
+  </head>
+  <body>
+    <h2 class="budget">Budget: ₹50,00,00,000</h2>
+
+    <h3 class="unit-des">
+      Fashion: ₹5,000 x <span class="unit-count" id="fashion">0</span>
+      <button class="js-button" onclick="changeUnit(1, 'fashion')">
+        &uarr;
+      </button>
+      <button class="js-button" onclick="changeUnit(0, 'fashion')">
+        &darr;
+      </button>
+    </h3>
+
+    <h3 class="unit-des">
+      Electronics: ₹30,000 x <span class="unit-count" id="electronics">0</span>
+      <button class="js-button" onclick="changeUnit(1, 'electronics')">
+        &uarr;
+      </button>
+      <button class="js-button" onclick="changeUnit(0, 'electronics')">
+        &darr;
+      </button>
+    </h3>
+
+    <h3 class="unit-des">
+      Digital Photography: ₹50,000 x
+      <span class="unit-count" id="photo">0</span>
+      <button class="js-button" onclick="changeUnit(1, 'photo')">&uarr;</button>
+      <button class="js-button" onclick="changeUnit(0, 'photo')">&darr;</button>
+    </h3>
+
+    <h3 class="unit-des">
+      Tour & Travels: ₹2,00,000 x <span class="unit-count" id="tour">0</span>
+      <button class="js-button" onclick="changeUnit(1, 'tour')">&uarr;</button>
+      <button class="js-button" onclick="changeUnit(0, 'tour')">&darr;</button>
+    </h3>
+
+    <h3 class="unit-des">
+      Real State: ₹50,00,000 x <span class="unit-count" id="rs">0</span>
+      <button class="js-button" onclick="changeUnit(1, 'rs')">&uarr;</button>
+      <button class="js-button" onclick="changeUnit(0, 'rs')">&darr;</button>
+    </h3>
+
+    <button class="js-button submit-button" onclick="submit()">SUBMIT</button>
+
+    <h2>Spend: ₹<span id="spend"></span></h2>
+
+    <script src="script.js"></script>
+  </body>
+</html>

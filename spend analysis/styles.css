@@ -1,0 +1,36 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.budget {
+  border: 2px solid black;
+  width: 50%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.unit-count {
+  border: 2px solid black;
+  text-align: center;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.js-button {
+  width: 30px;
+  height: 30px;
+  font-style: bold;
+  border-radius: 3px;
+  margin: 2px;
+}
+
+.js-button:hover {
+  background-color: black;
+  color: white;
+}
+.submit-button {
+  width: 80px;
+}

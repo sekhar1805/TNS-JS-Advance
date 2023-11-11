@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random</title>
+  </head>
+  <body>
+    <body>
+  Hello world
+
+  <script>
+    // List of available theme colors
+    const themes = [
+      "dark",
+      "light",
+      "red",
+      "orange",
+      "yellow",
+      "lime",
+      "green",
+      "teal",
+      "blue",
+      "blurple",
+      "magenta",
+      "pink"
+    ];
+
+    // Function to get a random theme
+    function getRandomTheme() {
+      const randomIndex = Math.floor(Math.random() * themes.length);
+      return themes[randomIndex];
+    }
+
+    // Set a random theme for the Replit badge
+    const replitBadgeScript = document.createElement("script");
+    replitBadgeScript.src = "https://replit.com/public/js/replit-badge-v2.js";
+    replitBadgeScript.setAttribute("theme", getRandomTheme());
+    replitBadgeScript.setAttribute("position", "bottom-right");
+    document.body.appendChild(replitBadgeScript);
+  </script>
+  </body>
+</html>

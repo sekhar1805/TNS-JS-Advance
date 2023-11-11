@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signature Builder</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Borel&family=Edu+TAS+Beginner&family=Lumanosimo&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Signature Builder</h1>
+
+    <div class="input-container">
+      <label for="name">Enter Your Name:</label>
+      <input type="text" id="name" oninput="updateSignatures()" />
+    </div>
+
+    <div class="font-sample-container">
+      <label for="font">Select a Font:</label>
+      <select id="font" onchange="updateSignatures()">
+        <option value="Borel, sans-serif">Borel</option>
+        <option value="Lumanosimo, sans-serif">Lumanosimo</option>
+        <option value="Times New Roman, serif">Times New Roman</option>
+        <option value="Edu TAS Beginner, serif">Edu TAS Beginner</option>
+        <option value="Courier New, monospace">Courier New</option>
+      </select>
+    </div>
+
+    <div class="signature-container">
+      <h2>Full Name Signature</h2>
+      <div id="full-name-signature">Your Full Name Signature</div>
+      <h2>Short Name Signature</h2>
+      <div id="short-name-signature">Your Short Name Signature</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

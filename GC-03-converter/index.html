@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converter</title>
+  </head>
+  <body>
+    <h1>Unit Converter</h1>
+
+    <label for="conversion">Select Conversion:</label>
+    <select id="conversion">
+      <option value="1a">Meter to Foot</option>
+      <option value="1b">Foot to Meter</option>
+      <option value="2a">Centimeter to Inch</option>
+      <option value="2b">Inch to Centimeter</option>
+      <option value="3a">Cubic Meter to Liter</option>
+      <option value="3b">Liter to Cubic Meter</option>
+      <option value="4a">Square Foot to Acre</option>
+      <option value="4b">Acre to Square Foot</option>
+    </select>
+
+    <input type="number" id="value" placeholder="Enter value to convert" />
+    <button onclick="convert()">Convert</button>
+    <p id="result"></p>
+    <script src="script.js"></script>
+  </body>
+</html>
